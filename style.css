@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align Images</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    h1 {
+      text-align: center;
+      color: green;
+      font-weight: bold;
+    }
+    p {
+      text-align: center;
+      color: red;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+    }
+    img {
+      width: 100%;
+    }
+    .row::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Hello GeeksForGeeks! Images Side by Side</h1>
+<p>GeeksforGeeks present side-by-side images using CSS float:</p>
+
+<div class="row">
+  <div class="column"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20230331171125/qq2.png"></div>
+  <div class="column"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20230331171125/qq2.png"></div>
+  <div class="column"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20230331171125/qq2.png"></div>
+</div>
+
+</body>
+</html>

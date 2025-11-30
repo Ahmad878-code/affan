@@ -1,21 +1,11 @@
-var index = 0;
-
-function carousel() {
+var myIndex = 0;
+caraousel();
+function caraousel() {
     var i;
-    var x = document.getElementsByClassName("myslides");
-
+    var x = document.getElementsByClassName("mySlides");
     for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-
-    index++;
-    if (index > x.length) {
-        index = 1;
-    }
-
-    x[index - 1].style.display = "block";
-
-    setTimeout(carousel, 2000);
-}
-
-carousel(); // Start the carousel when the page loads
+         x[i].style.display = "none";}
+         myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+     x[myIndex-1].style.display = "block";
+     setTimeout(caraousel, 3000); }
